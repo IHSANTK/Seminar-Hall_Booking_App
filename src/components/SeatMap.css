@@ -1,0 +1,37 @@
+.seat-map {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  @media (max-width: 780px) {
+    .seat-map {
+      grid-template-columns: repeat(6, 40px);
+    }
+  }
+  .seat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .seat.available {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .seat.booked {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .seat.selected {
+    background: #ffc107;
+    color: #fff;
+  }
